@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Feature from './Components/Feature.jsx';
+import Feature from './Components/Feature.jsx'
 import Callhistory from './Components/Callhistory.jsx'  
 import Dialer from './Components/Dialer.jsx'
 
@@ -12,8 +12,7 @@ function App() {
 
   return (
     <>
-   
-  <Dialer/>
+   <Dialer/>
    <Callhistory/>
     </>
   )
