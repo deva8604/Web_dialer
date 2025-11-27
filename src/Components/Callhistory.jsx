@@ -19,7 +19,7 @@ export default function CallHistory() {
 
   const downloadAudio = (entry) => {
     if (!entry.audioBase64) {
-      alert("No recording for this entry.");
+      alert("No recording available for this entry.");
       return;
     }
     const byteString = atob(entry.audioBase64);
