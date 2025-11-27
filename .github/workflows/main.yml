@@ -2,11 +2,17 @@ name : dialer
 on : 
   push:
     branches: [ "main" ]
+    
 jobs:
   build:
-    runs-on: ubuntu-latest    
-    
+    runs-on: ubuntu-latest       
     steps:
         - uses: actions/checkout@v3
         - run: npm install
         - run: npm run build
+  test:
+    runs-on: ubuntu-latest
+    steps:
+       - uses: actions/checkout@v3
+       - run: npm install
+       - run: npm run test
